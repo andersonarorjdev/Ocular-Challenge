@@ -1,28 +1,44 @@
-let GECESQ = document.getElementById('GECESQ');
-let GECDIR = document.getElementById('GECDIR');
-let GEOESQ = document.getElementById('GEOESQ');
-let GEODIR = document.getElementById('GEODIR');
+let GrauCilindricoEsquerdo = document.getElementById('GCESQ');
+let GrauCilindricoDireito = document.getElementById('GCDIR');
+let GrauEsfericoEsquerdo = document.getElementById('GEESQ');
+let GrauEsfericoDireito = document.getElementById('GEDIR');
 
 const TakeValue = (value, ID) =>{
     switch (ID){
         case 1 :
-            GEOESQ = value.options[value.selectedIndex].value;
+            GrauEsfericoEsquerdo = value.options[value.selectedIndex].value;
         break;
             
         case 2 :
-            GEODIR = value.options[value.selectedIndex].value;
+            GrauEsfericoDireito = value.options[value.selectedIndex].value;
         break;
                 
         case 3 :
-            GECESQ = value.options[value.selectedIndex].value;
+            GrauCilindricoEsquerdo = value.options[value.selectedIndex].value;
         break;
 
         case 4 :
-            GECDIR = value.options[value.selectedIndex].value;
+            GrauCilindricoDireito = value.options[value.selectedIndex].value;
         break;    
     }
 }
 
 const CalculateVision = (data) =>{
-    alert(`The values are: ${GEOESQ}, ${GEODIR}, ${GECESQ}, ${GECDIR}`);
+    alert(`${GrauEsfericoEsquerdo}, ${GrauEsfericoDireito}, ${GrauCilindricoEsquerdo}, ${GrauCilindricoDireito}`);
+
+    if(GrauEsfericoEsquerdo < 0){
+        alert('Grau Esferico Esquerdo menor do que 0');
+    }
+
+    if(GrauEsfericoDireito < 0){
+        alert('Grau Esferico Direito Menor do que 0');
+    }
+
+    if(GrauCilindricoEsquerdo < 0){
+        alert('Grau Cilindrico Esquerdo Menor do que 0');
+    }
+
+    if(GrauCilindricoDireito < 0){
+        alert('Grau Cilindrico Direito Menor do que 0');
+    }
 }
