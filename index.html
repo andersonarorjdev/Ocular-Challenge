@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocular Challenge</title>
+
+    <!-- Scripts -->
+    <script src="./scripts/Logical.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Logo</h1>
+
+            <div>
+                <h3>Home</h3>
+                <h3>Shop</h3>
+                <h3>Blog</h3>
+                <h3>About Us</h3>
+                <h3>Contact</h3>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="Controls">
+
+            <div>
+                <label for="">Grau Esférico Olho Esquerdo</label>
+                <select name="Grau_Esferico_Olho_Esq" id="GEOESQ">
+                    <option value="0">0</option>
+                    <option value="">-0.25</option>
+                    <option value="">-0.50</option>
+                    <option value="">-0,75</option>
+                    <option value="">-1,00</option>
+                    <option value="">-1,25</option>
+                    <option value="">-1,50</option>
+                    <option value="">-1,75</option>
+                    <option value="">-2,00</option>
+                    <option value="">-2,25</option>
+                    <option value="">-2,50</option>
+                    <option value="">-2,75</option>
+                    <option value="">-3,00</option>
+                    <option value="">-3,25</option>
+                    <option value="">-3,50</option>
+                    <option value="">-3,75</option>
+                    <option value="">-4,00</option>
+                    <option value="">-4,25</option>
+                    <option value="">-4,50</option>
+                    <option value="">-4,75</option>
+                    <option value="">-5,00</option>
+                    <option value="">-5,25</option>
+                    <option value="">-5,50</option>
+                    <option value="">-5,75</option>
+                    <option value="">-6,00</option>
+                    <option value="">-6,25</option>
+                    <option value="">-6,50</option>
+                    <option value="">-6,75</option>
+                    <option value="">-7,00</option>
+                    <option value="">-7,25</option>
+                    <option value="">-7,50</option>
+                    <option value="">-7,75</option>
+                    <option value="">-8.00</option>
+                    <option value="">-8,25</option>
+                    <option value="">-8,50</option>
+                    <option value="">-8,75</option>
+                    <option value="">-9,00</option>
+                    <option value="">-9,25</option>
+                    <option value="">-9,50</option>
+                    <option value="">-9,75</option>
+                    <option value="">-10,00</option>
+                    <option value="">-10,25</option>
+                    <option value="">-10,50</option>
+                    <option value="">-10,75</option>
+                    <option value="">-11,00</option>
+                    <option value="">-11,25</option>
+                    <option value="">-11,50</option>
+                    <option value="">-11,75</option>
+                    <option value="">-12.00</option>
+                    <option value="">-12,25</option>
+                    <option value="">-12,50</option>
+                    <option value="">-12,75</option>
+                    <option value="">-13,00</option>
+                    <option value="">-13,25</option>
+                    <option value="">-13,50</option>
+                    <option value="">-13,75</option>
+                    <option value="">-14,00</option>
+                    <option value="">-14,25</option>
+                    <option value="">-14,50</option>
+                    <option value="">-14,75</option>
+                    <option value="">-15,00</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Grau Esférico Olho Direito</label>
+                <select name="Grau_Esferico_Olho_Dir" id="GEODIR">
+                    <option value="0">0</option>
+                    <option value="">-0.25</option>
+                    <option value="">-0.50</option>
+                    <option value="">-0,75</option>
+                    <option value="">-1,00</option>
+                    <option value="">-1,25</option>
+                    <option value="">-1,50</option>
+                    <option value="">-1,75</option>
+                    <option value="">-2,00</option>
+                    <option value="">-2,25</option>
+                    <option value="">-2,50</option>
+                    <option value="">-2,75</option>
+                    <option value="">-3,00</option>
+                    <option value="">-3,25</option>
+                    <option value="">-3,50</option>
+                    <option value="">-3,75</option>
+                    <option value="">-4,00</option>
+                    <option value="">-4,25</option>
+                    <option value="">-4,50</option>
+                    <option value="">-4,75</option>
+                    <option value="">-5,00</option>
+                    <option value="">-5,25</option>
+                    <option value="">-5,50</option>
+                    <option value="">-5,75</option>
+                    <option value="">-6,00</option>
+                    <option value="">-6,25</option>
+                    <option value="">-6,50</option>
+                    <option value="">-6,75</option>
+                    <option value="">-7,00</option>
+                    <option value="">-7,25</option>
+                    <option value="">-7,50</option>
+                    <option value="">-7,75</option>
+                    <option value="">-8.00</option>
+                    <option value="">-8,25</option>
+                    <option value="">-8,50</option>
+                    <option value="">-8,75</option>
+                    <option value="">-9,00</option>
+                    <option value="">-9,25</option>
+                    <option value="">-9,50</option>
+                    <option value="">-9,75</option>
+                    <option value="">-10,00</option>
+                    <option value="">-10,25</option>
+                    <option value="">-10,50</option>
+                    <option value="">-10,75</option>
+                    <option value="">-11,00</option>
+                    <option value="">-11,25</option>
+                    <option value="">-11,50</option>
+                    <option value="">-11,75</option>
+                    <option value="">-12.00</option>
+                    <option value="">-12,25</option>
+                    <option value="">-12,50</option>
+                    <option value="">-12,75</option>
+                    <option value="">-13,00</option>
+                    <option value="">-13,25</option>
+                    <option value="">-13,50</option>
+                    <option value="">-13,75</option>
+                    <option value="">-14,00</option>
+                    <option value="">-14,25</option>
+                    <option value="">-14,50</option>
+                    <option value="">-14,75</option>
+                    <option value="">-15,00</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Grau Cilíndrico Olho Esquerdo</label>
+                <select name="Grau_Cilindrico_Olho_Esq" id="GECESQ">
+                    <option value="0">0</option>
+                    <option value="">-0.25</option>
+                    <option value="">-0.50</option>
+                    <option value="">-0,75</option>
+                    <option value="">-1,00</option>
+                    <option value="">-1,25</option>
+                    <option value="">-1,50</option>
+                    <option value="">-1,75</option>
+                    <option value="">-2,00</option>
+                    <option value="">-2,25</option>
+                    <option value="">-2,50</option>
+                    <option value="">-2,75</option>
+                    <option value="">-3,00</option>
+                    <option value="">-3,25</option>
+                    <option value="">-3,50</option>
+                    <option value="">-3,75</option>
+                    <option value="">-4,00</option>
+                    <option value="">-4,25</option>
+                    <option value="">-4,50</option>
+                    <option value="">-4,75</option>
+                    <option value="">-5,00</option>
+                    <option value="">-5,25</option>
+                    <option value="">-5,50</option>
+                    <option value="">-5,75</option>
+                    <option value="">-6,00</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Grau Cilíndrico Olho Direito</label>      
+                <select name="Grau_Cilindrico_Olho_Dir" id="GECDIR">
+                    <option value="0">0</option>
+                    <option value="">-0.25</option>
+                    <option value="">-0.50</option>
+                    <option value="">-0,75</option>
+                    <option value="">-1,00</option>
+                    <option value="">-1,25</option>
+                    <option value="">-1,50</option>
+                    <option value="">-1,75</option>
+                    <option value="">-2,00</option>
+                    <option value="">-2,25</option>
+                    <option value="">-2,50</option>
+                    <option value="">-2,75</option>
+                    <option value="">-3,00</option>
+                    <option value="">-3,25</option>
+                    <option value="">-3,50</option>
+                    <option value="">-3,75</option>
+                    <option value="">-4,00</option>
+                    <option value="">-4,25</option>
+                    <option value="">-4,50</option>
+                    <option value="">-4,75</option>
+                    <option value="">-5,00</option>
+                    <option value="">-5,25</option>
+                    <option value="">-5,50</option>
+                    <option value="">-5,75</option>
+                    <option value="">-6,00</option>
+                </select>
+            </div>
+
+            <button>
+                Executar
+            </button>
+
+        </section>
+
+        <section id="Display_Option">
+            <div>
+                Prime
+            </div>
+
+            <div>
+                Vision
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>Links</h4>
+        <h4>About Us</h4>
+        <h4>Social Media</h4>
+        <h4>Terms and Privacy Policy</h4>
+    </footer>
+</body>
+</html>

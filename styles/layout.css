@@ -1,0 +1,100 @@
+/* Styles to adjust Body Layout */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #f0f4f7;
+}
+
+/* Styles for header and nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:10px 13px;
+
+    background-color: blueviolet;
+    color: #FFFFFF;
+
+    height: 10vh;
+}
+
+nav > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav > div > h3{
+    padding:0px 10px;
+}
+
+/* Styles for main content */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height:80vh;
+}
+
+#Controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label{
+    color:rgb(94, 21, 167);
+
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#Controls > button{
+    padding:10px;
+
+    color:#FFFFFF;
+    background-color: rgb(133, 56, 209);
+    border:1px solid rgb(133, 56, 209);
+
+    border:none;
+    border-radius: 6px;
+}
+
+#Controls > button:hover{
+    color:rgb(133, 56, 209);
+    background-color: #FFFFFF;
+    border:1px solid rgb(133, 56, 209);
+
+    font-weight: bolder;
+}
+
+#Display_Option{
+    display: flex;
+    justify-content: space-around;
+}
+
+#Display_Option > div{
+    border: 1px solid rgb(160, 49, 160);
+    padding: 80px 100px;
+}
+
+/* Styles for Footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding:15px 20px;
+
+    background-color: blueviolet;
+    color:#FFFFFF;
+
+    height: 10vh;
+}
