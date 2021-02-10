@@ -1,0 +1,9 @@
+@media(max-width:768px){
+
+    #Controls{
+        flex-direction: column;
+        justify-content: space-around;
+
+        align-items: center;
+    }
+}

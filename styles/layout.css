@@ -55,8 +55,24 @@ label{
     font-weight: bolder;
 }
 
-#Controls > button{
+#Buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#Controls > div{
+    margin: 10px;
+}
+
+select{
+    border: 1px solid purple;
+    background-color: #FFFFFF;
+    color: purple;
+}
+
+#Controls > #Buttons > button{
     padding:10px;
+    margin: 10px;
 
     color:#FFFFFF;
     background-color: rgb(133, 56, 209);
@@ -66,7 +82,7 @@ label{
     border-radius: 6px;
 }
 
-#Controls > button:hover{
+#Controls > #Buttons > button:hover{
     color:rgb(133, 56, 209);
     background-color: #FFFFFF;
     border:1px solid rgb(133, 56, 209);
