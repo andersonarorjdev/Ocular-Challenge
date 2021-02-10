@@ -1,8 +1,3 @@
-let GrauCilindricoEsquerdo = document.getElementById('GCESQ');
-let GrauCilindricoDireito = document.getElementById('GCDIR');
-let GrauEsfericoEsquerdo = document.getElementById('GEESQ');
-let GrauEsfericoDireito = document.getElementById('GEDIR');
-
 const TakeValue = (value, ID) =>{
     switch (ID){
         case 1 :
@@ -54,3 +49,5 @@ const CalculateVision = (data) =>{
         alert('Não Foi Possível localizar sua lente!');
     }
 }   
+
+
