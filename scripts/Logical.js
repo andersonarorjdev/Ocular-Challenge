@@ -19,6 +19,7 @@ const TakeValue = (value, ID) =>{
 }
 
 const CalculateVision = (data) =>{
+    let LensPossibility = document.getElementsByClassName('Lens');
     let SelectedColor = 'purple';
     let SelectedBorder = '1px solid purple';
 
