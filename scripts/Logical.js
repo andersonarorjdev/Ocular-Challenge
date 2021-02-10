@@ -26,19 +26,31 @@ const TakeValue = (value, ID) =>{
 const CalculateVision = (data) =>{
     alert(`${GrauEsfericoEsquerdo}, ${GrauEsfericoDireito}, ${GrauCilindricoEsquerdo}, ${GrauCilindricoDireito}`);
 
-    if(GrauEsfericoEsquerdo < 0){
-        alert('Grau Esferico Esquerdo menor do que 0');
+    //Além disso, ela só atende até grau cilíndrico -2,porém, se o usuário apresentar grau cilíndrico, ela passa a atender grau esférico entre -3 e -10.
+    if(GrauCilindricoEsquerdo > -2 || GrauCilindricoDireito > -2){
+        if((GrauEsfericoEsquerdo < -3 && GrauEsfericoEsquerdo > -10) || (GrauEsfericoDireito < -3 && GrauEsfericoDireito > -10  )){
+            alert('Lente Prime 2');
+            
+            return;
+        }
     }
+    
+    // A lente Prime só pode ser uma opção para o usuário que tiver grau esférico, seja do olho esquerdo ou do olho direito, entre -3 e -12.
+    if((GrauEsfericoEsquerdo < -3 && GrauEsfericoEsquerdo > -12) || (GrauEsfericoDireito < -3 && GrauEsfericoDireito > -12)){
+        if((GrauCilindricoDireito == 0) && (GrauCilindricoEsquerdo == 0))
+        alert('Lente Prime 1');
 
-    if(GrauEsfericoDireito < 0){
-        alert('Grau Esferico Direito Menor do que 0');
+        return;
     }
-
-    if(GrauCilindricoEsquerdo < 0){
-        alert('Grau Cilindrico Esquerdo Menor do que 0');
+    
+    if((GrauEsfericoEsquerdo < 0 && GrauEsfericoEsquerdo > -15) && (GrauEsfericoDireito < 0 && GrauEsfericoDireito > -15)){
+       if(GrauCilindricoEsquerdo && GrauCilindricoDireito > -5){
+           alert('Lente Vision');
+    
+           return;
+        }      
     }
-
-    if(GrauCilindricoDireito < 0){
-        alert('Grau Cilindrico Direito Menor do que 0');
+    else{
+        alert('Não Foi Possível localizar sua lente!');
     }
-}
+}   
